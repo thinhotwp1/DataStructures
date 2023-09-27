@@ -1,19 +1,21 @@
 
 1. Với Singly Linked List, một ô giá trị được lưu bằng 1 ô nhớ data và 1 ô nhớ địa chỉ của ô kế tiếp
-                                     Singly Linked List
-                          Node              Node                Node
-                     [data|address] ->  [data|address] ->  [data|address]
+
+                                         Singly Linked List
+                              Node              Node                Node
+                         [data|address] ->  [data|address] ->  [data|address]
 
 
 2. Với Doubly Linked List, một ô giá trị được lưu bằng 1 ô nhớ data và 2 ô nhớ địa chỉ của ô trước và địa chỉ ô kế tiếp
-                                     Doubly Linked List
-                              Node                        Node
-                     [address|data|address]  ->  [address|data|address]
+
+                                         Doubly Linked List
+                                  Node                        Node
+                         [address|data|address]  ->  [address|data|address]
 
 3. Với Singly Linked List tất nhiên sẽ tiết kiệm được bộ nhớ, còn Doubly Linked List sẽ tăng tốc độ thêm và xóa index nếu
-như cần xóa từ cuối danh sách về đầu danh sách, vì đã lưu địa chỉ ô trước nên xóa hoặc thêm rất nhanh không cần duyệt lại
-từ đầu tới index trước của index đang làm việc như Singly Linked List
+như cần dùng tới phần tử trước của phần tử index, ví dụ như xóa từ cuối danh sách về đầu danh sách, vì đã lưu địa chỉ ô
+trước nên xóa hoặc thêm rất nhanh không cần duyệt lại từ đầu tới index trước của index đang làm việc như Singly Linked List
 
-4. Nếu việc thêm và xóa phần tử ở cuối danh sách hoặc chỉ cần truy cập dữ liệu theo chiều thuận, thì Singly Linked List có thể đủ.
-Nếu cần truy cập dữ liệu theo cả hai chiều, thêm và xóa phần tử từ cả hai đầu danh sách, hoặc thực hiện các thao tác phức tạp
-hơn như việc xóa nút từ giữa danh sách, thì Doubly Linked List có lợi thế hơn, xem ví dụ ở Doubly_LinkedList.java
+4. Nếu việc thêm và xóa phần tử ở cuối danh sách hoặc chỉ cần truy cập dữ liệu theo chiều thuận, thì Singly Linked List có
+thể đủ. Nếu cần truy cập dữ liệu theo cả hai chiều, thêm và xóa phần tử từ cả hai đầu danh sách, hoặc thực hiện các thao
+tác phức tạp hơn như việc xóa nút từ giữa danh sách, thì Doubly Linked List có lợi thế hơn, xem ví dụ ở Doubly_LinkedList.java

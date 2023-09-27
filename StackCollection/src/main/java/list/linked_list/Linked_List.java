@@ -10,7 +10,7 @@ public class Linked_List {
 
      - LinkedList lưu object theo dạng lưu giá trị và thêm địa chỉ của index tiếp theo, nếu thêm một object
      vào vị trí n thì chỉ cần sửa ô nhớ của 2 ô thứ n-1 và thứ n+1, rất nhanh nếu phải thêm nhiều vào index cụ thể
-     (Nhưng sẽ tốn bộ nhớ hơn List vì phải lưu thêm địa chỉ ô nhớ của ô tiếp theo)
+     (Nhưng sẽ tốn bộ nhớ hơn vì phải lưu thêm địa chỉ ô nhớ của ô tiếp theo và có thể cả ô nhớ trước đó - Doubly Linked List)
 
      - So sánh tốc độ thêm object giữa list và linkedList ở file List_Vs_LinkedList.java
      */

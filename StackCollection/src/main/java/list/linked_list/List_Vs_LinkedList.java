@@ -7,14 +7,15 @@ import java.util.List;
 public class List_Vs_LinkedList {
     public static void main(String[] args) {
         /**
-         * Đối với danh sách nhỏ và thêm vào list ở cuối danh sách thì List nhanh hơn,
-         * nếu cần thêm vào index cụ thể thì LinkedList giảm nhiều thời gian,
-         * ví dụ dưới với arrayList mất 1p để thực hiện còn với linkedList thì chỉ
-         * mất 0.1s với mảng 1 triệu phần từ
+         * - Đối với danh sách nhỏ và thêm vào list ở cuối danh sách thì List nhanh hơn,
+         * nếu cần thêm vào index cụ thể thì LinkedList giảm nhiều thời gian hơn rất nhiều
+         *
+         * - Ví dụ dưới với arrayList mất 1p để thực hiện còn với linkedList thì chỉ
+         * mất 0.1s với mảng 1 triệu phần từ ( Tùy từng máy - phần cứng)
          */
 
         List<String> arrayList = new ArrayList<>();
-        // Chèn 1 triệu phần tử vào giữa danh sách
+        // Chèn 1 triệu phần tử vào arrayList ở vị trí 0
         long startTime = System.currentTimeMillis();
         for (int i = 0; i < 1000000; i++) {
             arrayList.add(0, "Inserted 0");
@@ -24,6 +25,7 @@ public class List_Vs_LinkedList {
 
 
         List<String> linkedList = new LinkedList<>();
+        // Chèn 1 triệu phần tử vào linkedList ở vị trí 0
         startTime = System.currentTimeMillis();
         for (int i = 0; i < 1000000; i++) {
             linkedList.add(0, "Inserted 0");

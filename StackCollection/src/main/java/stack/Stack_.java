@@ -1,7 +1,16 @@
+package stack;
+
 import java.util.Stack;
 
-public class StackSample {
+public class Stack_ {
     // Stack = LIFO - Last In First Out
+
+    // Ứng dụng:
+    // Làm undo for text editor, sửa đổi cuối sẽ được sử dụng đầu
+    // Lịch sử brower, lùi hoặc tiến bằng nút quay lại hoặc tiến lên trong brower
+    // Tìm kiếm thông tin qua path C:/code/stack/over/flow
+    // Log điều khiển chương trình, ví dụ khi ấn mũi tên trong terminal thì lấy câu lệnh gần nhất
+
     public static void main(String[] args) {
         Stack<String> stack = new Stack<>();
 
@@ -23,12 +32,6 @@ public class StackSample {
         // Search index, return index object
         System.out.println(stack.search("apt_update"));
         System.out.println(stack.search("No_in_Stack"));
-
-        // Ứng dụng:
-            // Làm undo for text editor, sửa đổi cuối sẽ được sử dụng đầu
-            // Lịch sử brower, lùi hoặc tiến bằng nút quay lại hoặc tiến lên trong brower
-            // Tìm kiếm thông tin qua path C:/code/stack/over/flow
-            // Log điều khiển chương trình, ví dụ khi ấn mũi tên trong terminal thì lấy câu lệnh gần nhất
 
     }
 }
