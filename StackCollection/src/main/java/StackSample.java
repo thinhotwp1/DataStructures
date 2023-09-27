@@ -3,26 +3,26 @@ import java.util.Stack;
 public class StackSample {
     // Stack = LIFO - Last In First Out
     public static void main(String[] args) {
-        Stack<String> stackSample = new Stack<>();
+        Stack<String> stack = new Stack<>();
 
-        // Đẩy dữ liệu vào stack
-        stackSample.push("apt_update");
-        stackSample.push("snap_install");
-        stackSample.push("pwd");
-        stackSample.push("sudo");
-        System.out.println(stackSample);
+        // Đẩy dữ liệu vào stack, push(Object) = addElement(Object)
+        stack.push("apt_update");
+        stack.push("snap_install");
+        stack.push("pwd");
+        stack.push("sudo");
+        System.out.println(stack);
 
-        // Đẩy dữ liệu ra khỏi stack, đẩy phần từ cuối cùng ra, vào sau ra trước
-        stackSample.pop();
-        stackSample.pop();
-        System.out.println(stackSample);
+        // pop() = remove last index
+        stack.pop();
+        stack.pop();
+        System.out.println(stack);
 
-        // Lấy dữ liệu stack trên cùng hay stack cuối được thêm vào
-        System.out.println(stackSample.peek());
+        // peek() = get last index
+        System.out.println(stack.peek());
 
-        // Search index
-        System.out.println(stackSample.search("apt_update"));
-        System.out.println(stackSample.search("No_in_Stack"));
+        // Search index, return index object
+        System.out.println(stack.search("apt_update"));
+        System.out.println(stack.search("No_in_Stack"));
 
         // Ứng dụng:
             // Làm undo for text editor, sửa đổi cuối sẽ được sử dụng đầu
