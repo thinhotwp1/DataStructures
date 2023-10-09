@@ -40,18 +40,17 @@ public class ArrayList_Vs_LinkedList {
         endTime = System.currentTimeMillis();
         System.out.println("Thời gian ArrayList: " + (endTime - startTime) + "ms");
 
-
         // Chèn 1 triệu phần tử vào LinkedList ở đầu danh sách
         startTime = System.currentTimeMillis();
         for (int i = 0; i < 1000000; i++)   linkedList.add(0, "Inserted 0");
         endTime = System.currentTimeMillis();
         System.out.println("Thời gian LinkedList: " + (endTime - startTime) + "ms");
 
-
         System.out.println("--------------------------------------------------------------------------------");
         // clear data
         arrayList.clear();
         linkedList.clear();
+
         System.out.println("Ví dụ 2: Thêm 1 triệu phần tử ở cuối danh sách.");
 
         // Chèn 1 triệu phần tử vào ArrayList ở cuối danh sách
@@ -60,13 +59,11 @@ public class ArrayList_Vs_LinkedList {
         endTime = System.currentTimeMillis();
         System.out.println("Thời gian ArrayList: " + (endTime - startTime) + "ms");
 
-
         // Chèn 1 triệu phần tử vào LinkedList ở cuối danh sách
         startTime = System.currentTimeMillis();
         for (int i = 0; i < 1000000; i++)   linkedList.add("Inserted 1000000");
         endTime = System.currentTimeMillis();
         System.out.println("Thời gian LinkedList: " + (endTime - startTime) + "ms");
-
 
         System.out.println("--------------------------------------------------------------------------------");
         System.out.println("Ví dụ 3: Thêm 1000 phần tử ở giữa danh sách.");
@@ -78,7 +75,6 @@ public class ArrayList_Vs_LinkedList {
         endTime = System.currentTimeMillis();
         System.out.println("Thời gian ArrayList: " + (endTime - startTime) + "ms");
 
-
         // Chèn phần tử vào LinkedList ở giữa danh sách
         startTime = System.currentTimeMillis();
         for (int i = 0; i < 1000; i++)  linkedList.add(500000,"Inserted 500000");
@@ -87,7 +83,5 @@ public class ArrayList_Vs_LinkedList {
         System.out.println("Thời gian LinkedList: " + (endTime - startTime) + "ms");
 
     }
-
-
 
 }
