@@ -15,7 +15,7 @@ public class ArrayList_Vs_LinkedList {
          * mất 1500ms với mảng 1 triệu phần tử.
          * ==> Thao tác phần tử đầu và giữa mảng thì LinkedList, giữa tới cuối thì ArrayList 
          *
-         * <-------------------------------------------WHY?------------------------------------------------>
+         * <------------------------------------------- WHY? ------------------------------------------------>
          * - Nếu danh sách cần thêm xóa một phần tử ở đầu tới giữa thì việc sử dụng LinkedList sẽ nhanh hơn
          * do sử dụng địa chỉ ô nhớ của ô trước và ô sau để thêm hoặc xóa một ô bên cạnh, còn ArrayList khi thêm
          * một phần tử mới sẽ phải di dời các phần tử đằng sau sang 1 index.
@@ -23,6 +23,8 @@ public class ArrayList_Vs_LinkedList {
          * - Nếu danh sách cần thêm xóa phần tử ở giữa tới cuối danh sách thì việc sử dụng ArrayList sẽ nhanh hơn
          * do ArrayList sử dụng index để lưu ô dữ liệu, nhanh hơn so với duyệt từng ô một tới cuối như linkedList,
          * vì linkedList lưu theo địa chỉ ô tiếp theo nên phải duyệt lần lượt từng ô tới cuối danh sách.
+         *
+         * - Trường hợp thêm ở giữa danh sách thì 2 thằng ngang nhau.
          * <----------------------------------------------------------------------------------------------->
          */
 
